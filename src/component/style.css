@@ -1,0 +1,190 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Layout */
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: #1f1f2e;
+  padding: 50px 40px;
+
+  /* 🔥 Important Part */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card Container */
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  background: #2c2c3e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+  color: #fff;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image */
+.card-media {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Body */
+.card-body {
+  padding: 20px;
+}
+
+/* ID Circle */
+.card-number {
+  width: 35px;
+  height: 35px;
+  background: #ff4757;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Category */
+.card-author {
+  font-size: 14px;
+  color: #ffa502;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.card-description {
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Name Button */
+.card-read {
+  padding: 8px 12px;
+  background: #2ed573;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+.card-read:hover {
+  background: #1eae60;
+}
+
+/* Order Tag */
+.card-tag {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #3742fa;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+/* Heading */
+/* style.css */
+
+/* Navbar container */
+.navBar {
+    width: 100%;
+    background-color: #1f2937; /* Dark gray/navy background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Button group container */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons on small screens */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Individual buttons */
+.btn-group .item {
+    background-color: #374151; /* Slightly lighter gray */
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-group .item:hover {
+    background-color: #2563eb; /* Blue hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Active state (optional, if you want to highlight selected category) */
+.btn-group .item.active {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
+    }
+    
+    .btn-group .item {
+        width: 100%;
+        max-width: 200px;
+    }
+}
