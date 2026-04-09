@@ -1,0 +1,105 @@
+/* Center layout */
+.center-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f0f;
+}
+
+.center-div p {
+    color: white;
+    font-size: 28px;
+    margin: 40px;
+}
+
+/* Button Styling */
+.button2 {
+    position: relative;
+    padding: 15px 40px;
+    margin: 20px;
+    color: #00f7ff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+}
+
+/* Hover glow effect */
+.button2:hover {
+    background: #00f7ff;
+    color: #111;
+    box-shadow: 0 0 10px #00f7ff,
+                0 0 40px #00f7ff,
+                0 0 80px #00f7ff;
+    transition: 0.5s;
+}
+
+/* Span base */
+.button2 span {
+    position: absolute;
+    display: block;
+}
+
+/* TOP */
+.button2 span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00f7ff);
+}
+
+.button2:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.8s;
+}
+
+/* RIGHT */
+.button2 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00f7ff);
+}
+
+.button2:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.8s;
+    transition-delay: 0.2s;
+}
+
+/* BOTTOM */
+.button2 span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #00f7ff);
+}
+
+.button2:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.8s;
+    transition-delay: 0.4s;
+}
+
+/* LEFT */
+.button2 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #00f7ff);
+}
+
+.button2:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.8s;
+    transition-delay: 0.6s;
+}

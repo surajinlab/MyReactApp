@@ -1,11 +1,12 @@
 import React from 'react'
-import Restaurant from './component/Restaurant'
+import Restaurant from './component/Basics/Restaurant'
+import UseState from './component/Hooks/UseState'
 
 
 const App = () => {
   return (
     <>
-      <Restaurant />
+      <UseState />
     </>
   )
 } 
