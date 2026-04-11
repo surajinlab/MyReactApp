@@ -1,15 +1,26 @@
-import React from 'react'
+import React from 'react';
+import "./style.css";
 
-const useEffect = () => {
-    const myName = "Naruto";
+
+const UseEffect = () => {
+    const [myNum, setMyNum] = React.useState(5);
 
 
   return (
     <>
-        <h2>Hello I am in UseEffect.</h2>
-        <p>My Name is : {myName} </p>
+        <div className='center-div'>
+            <p> {myNum} </p>
+                
+            <div className="button2" onClick={() => setMyNum(myNum + 1 )}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                INCREMENT
+            </div>
+        </div>
     </>
   )
 }
 
-export default useEffect
+export default UseEffect
