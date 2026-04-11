@@ -1,12 +1,15 @@
 import React from 'react'
-import "./style.css"
 
-const UseEffect = () => {
+const useEffect = () => {
+    const myName = "Naruto";
+
+
   return (
     <>
-        <h2>Hello</h2>
+        <h2>Hello I am in UseEffect.</h2>
+        <p>My Name is : {myName} </p>
     </>
   )
 }
 
-export default UseEffect
+export default useEffect

@@ -6,7 +6,7 @@ import UseEffect from './component/Hooks/useEffect'
 const App = () => {
   return (
     <>
-      <UseState />
+      <UseEffect />
     </>
   )
 } 
