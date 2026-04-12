@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 
 
 const UseEffect = () => {
-    const [myNum, setMyNum] = React.useState(5);
+    const [myNum, setMyNum] = React.useState(0);
 
+    useEffect(() => {
+        document.title = `Chats(${myNum})`;
+    });
 
   return (
     <>
